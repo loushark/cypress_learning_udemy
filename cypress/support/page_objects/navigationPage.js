@@ -23,17 +23,17 @@ export class NavigationPage {
   }
 
   toasterPage() {
-    cy.contains("Modal & Overlays").click();
+    selectGroupMenuItem("Modal & Overlays");
     cy.contains("Toastr").click();
   }
 
   smartTablePage() {
-    cy.contains("Tables & Data").click();
+    selectGroupMenuItem("Tables & Data");
     cy.contains("Smart Table").click();
   }
 
   tooltipPage() {
-    cy.contains("Modal & Overlays").click();
+    selectGroupMenuItem("Modal & Overlays");
     cy.contains("Tooltip").click();
   }
 }
